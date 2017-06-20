@@ -28,7 +28,7 @@ func Search(P string, m int, T string, n int) int {
 	qsbc := preBadCharacter(P, m)
 
 	// Searching
-	for j := 0; j <= n-m; j += qsbc[T[j+m]] {
+	for j := 0; j <= n-m; j += qsbc[T[j+m]] { // shift
 		if P[:m] == T[j:][:m] {
 			return j
 		}
