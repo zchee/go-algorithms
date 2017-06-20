@@ -21,7 +21,8 @@ func preBadCharacter(P string, m int) []int {
 	return qbc
 }
 
-// Search search index of P in T using Quick Search algorithm.
+// Search search P in T using Quick Search algorithm.
+// The returns the index of the first instance of P in T, or -1 if P is not present in T.
 func Search(P string, m int, T string, n int) int {
 	// Preprocessing
 	qsbc := preBadCharacter(P, m)
