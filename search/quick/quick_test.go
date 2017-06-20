@@ -68,7 +68,7 @@ func TestSearch(t *testing.T) {
 				T: "test",
 				n: 4,
 			},
-			want: 0,
+			want: -1,
 		},
 	}
 	for _, tt := range tests {
