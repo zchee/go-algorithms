@@ -33,5 +33,5 @@ func Search(P string, m int, T string, n int) int {
 		}
 	}
 
-	return 0 // not match
+	return -1 // not match
 }
